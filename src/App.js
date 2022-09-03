@@ -1,4 +1,5 @@
 import Home from "./page/Home";
+import Profile from "./page/Profile";
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,6 +13,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/profile/:id" element={<Profile />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Router>
